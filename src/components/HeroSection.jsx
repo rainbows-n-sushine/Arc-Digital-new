@@ -6,7 +6,7 @@ import FadeInParagraph from "./Animation/FadeInParagraph";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20">
+    <div className="flex flex-col items-center mt-6 lg:mt-0" id="hero">
       {/* <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
         VirtualR build tools
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
@@ -27,11 +27,11 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
-          className="bg-blue-900 py-3 px-4 mx-3 rounded-md text-white"
+          className="bg-blue-900 py-2 px-4 mx-3 rounded-md text-white text-center justify-center w-full h-[50%] "
         >
          LinkedIn
         </a>
-        <a href="#" className="py-3 px-4 mx-3 rounded-md border border-[3px] border-neutral-200">
+        <a href="#" className="py-2 px-4 mx-3 rounded-md border border-[3px] border-neutral-200 w-full h-[50%] ">
          Upwork
         </a>
       </div>
