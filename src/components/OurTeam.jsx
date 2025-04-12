@@ -1,6 +1,8 @@
 import { teamMembers } from "../constants";
+import { useDragScroll } from '../hooks/useDragScroll';
 
 const OurTeam = () => {
+  const dragRef = useDragScroll();
   return (
     <div className="relative flex flex-col items-center justify-center mt-20 overflow-hidden h-full">
       <h2 className="text-4xl sm:text-6xl text-center mb-7 z-10 mb-40 text-left">Our Team</h2>
@@ -12,7 +14,7 @@ const OurTeam = () => {
           {teamMembers.map((member, index) => {
             const total = teamMembers.length;
             const angle = (360 / total) * index;
-            const radius = 190;
+            const radius = 197;
 
             const x = radius * Math.cos((angle * Math.PI) / 180);
             const y = radius * Math.sin((angle * Math.PI) / 180);
@@ -20,7 +22,7 @@ const OurTeam = () => {
             return (
               <div
                 key={index}
-                className="absolute w-60 h-60 rounded-full bg-blue-100 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 "
+                className="absolute w-60 h-60 rounded-full bg-blue-300 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 "
                 style={{
                   left: `50%`,
                   top: `50%`,
@@ -43,11 +45,14 @@ const OurTeam = () => {
       </div>
 
       {/* Horizontal scroll for smaller screens */}
-      <div className="w-full overflow-x-auto flex items-center justify-start space-x-6 pb-8 mt-10 sm:hidden">
+      <div 
+        ref={dragRef}
+      className="w-full overflow-x-auto flex items-center justify-start space-x-6 pb-8 mt-10 sm:hidden    relative overflow-x-auto scrollbar-hide mt-10 cursor-grab">
         {teamMembers.map((member, index) => (
           <div
+         
             key={index}
-            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-200 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300"
+            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-200 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300    animate-scroll"
           >
             {/* <img
               src={member.image}
