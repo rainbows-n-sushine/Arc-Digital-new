@@ -1,6 +1,7 @@
 import { teamMembers } from "../constants";
 import { useDragScroll } from '../hooks/useDragScroll';
 import {useState} from "react"
+import "../index.css"
 
 const OurTeam = () => {
   const dragRef = useDragScroll();
@@ -16,7 +17,7 @@ const OurTeam = () => {
           {teamMembers.map((member, index) => {
             const total = teamMembers.length;
             const angle = (360 / total) * index;
-            const radius = 190;
+            const radius = 180;
 
             const x = radius * Math.cos((angle * Math.PI) / 180);
             const y = radius * Math.sin((angle * Math.PI) / 180);
@@ -68,15 +69,15 @@ const OurTeam = () => {
           <div
          
             key={index}
-            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-200 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300    animate-scroll"
+            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 animate-scroll"
           >
             {/* <img
               src={member.image}
               alt={member.name}
               className="w-16 h-16 rounded-full border mb-2"
             /> */}
-            <h4 className="text-lg font-semibold">{member.name}</h4>
-            <p className="text-sm italic text-neutral-700">
+            <h4 className="text-lg font-semibold text-white">{member.name}</h4>
+            <p className="text-sm italic text-neutral-100">
               {member.position}
             </p>
           </div>

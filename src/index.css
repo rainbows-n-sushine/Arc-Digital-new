@@ -9,3 +9,30 @@
   scroll-behavior: smooth;
   /* color-scheme:dark; */
 }
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate-center {
+  animation: rotate-center 29s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll-left 60s linear infinite;
+}
+
+

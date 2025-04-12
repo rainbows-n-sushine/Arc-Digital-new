@@ -32,14 +32,15 @@ const OurClients = () => {
       >
         <div className="flex gap-20 w-max animate-scroll px-4 pt-[20px] pb-10 my-[80px]">
           {[...logos, ...logos].map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt={`Client ${index + 1}`}
-              className="h-40 w-auto object-contain w-auto h-[400px]"
-            />
-          ))}
-        </div>
+          <img
+            key={index}
+            src={src}
+            alt={`Client ${index + 1}`}
+            className="h-40 w-auto object-contain"
+          />
+        ))}
+      </div>
+
       </div>
     </div>
   );
