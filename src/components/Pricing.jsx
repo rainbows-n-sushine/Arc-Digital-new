@@ -30,13 +30,13 @@ const Pricing = () => {
         ref={dragRef}
         className="relative overflow-x-auto scrollbar-hide mt-10 cursor-grab"
       >
-        <div className="flex gap-10 w-max animate-scroll px-4 py-6">
+        <div className="flex gap-20 w-max animate-scroll px-4 pt-[20px] pb-10 my-[80px]">
           {[...logos, ...logos].map((src, index) => (
             <img
               key={index}
               src={src}
               alt={`Client ${index + 1}`}
-              className="h-40 w-auto object-contain"
+              className="h-40 w-auto object-contain w-[250px] h-auto"
             />
           ))}
         </div>
