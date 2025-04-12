@@ -19,7 +19,7 @@ const Pricing = () => {
     "/logos/client15.jpg",
   ];
 
-  const dragRef = useDragScroll(); // ✅ Correct naming
+  const dragRef = useDragScroll();
 
   return (
     <div className="w-full mt-20 my-12">
