@@ -21,24 +21,22 @@ const Navbar = () => {
            
           </div>
           </a>
-          <ul className="hidden lg:flex ml-14 space-x-12">
+          <ul className="hidden lg:flex mr-[50px] space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
                 <a href={item.href}>{item.label}</a>
               </li>
             ))}
           </ul>
-          <div className="hidden lg:flex justify-center space-x-12 items-center">
-            {/* <a href="#" className="py-2 px-3 border rounded-md">
-              Sign In
-            </a> */}
+          {/* <div className="hidden lg:flex justify-center space-x-12 items-center">
+          
             <a
               href="#"
               className="bg-blue-900 py-2 px-3 text-white mr-20 px-10 rounded-md"
             >
               Sign in
             </a>
-          </div>
+          </div> */}
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
               {mobileDrawerOpen ? <X /> : <Menu />}

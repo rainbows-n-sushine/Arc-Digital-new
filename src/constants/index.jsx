@@ -8,9 +8,9 @@ import {} from "lucide-react";
 
 
 export const navItems = [
-  { label: "Services", href: "#" },
-  { label: "Clients", href: "#" },
-  { label: "Team", href: "#" },
+  { label: "Services", href: "#services" },
+  { label: "Clients", href: "#clients" },
+  { label: "Team", href: "#team" },
 
 ];
 
@@ -67,6 +67,7 @@ export const contactLinks = [
   { href: "#", text: "Upwork" },
   { href: "#", text: "WhatsApp" },
   { href: "#", text: "Facebook" },
+  { href: "#", text: "Gmail" },
 
 ];
 

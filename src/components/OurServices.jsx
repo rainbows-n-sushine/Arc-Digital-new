@@ -2,7 +2,7 @@ import { services } from "../constants";
 
 const OurServices = () => {
   return (
-    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
+    <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]" id="services">
       <div className="text-center"> 
         <span className="bg-neutral-200 text-blue-800 rounded-full  py-3 px-3 w-full h-[700px] text-[125%] font-medium px-2 py-1 uppercase">
          Our services
