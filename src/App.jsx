@@ -4,7 +4,7 @@ import ServiceSection from "./components/ServiceSection";
 import Workflow from "./components/Workflow";
 import Footer from "./components/Footer";
 import Pricing from "./components/Pricing";
-import Testimonials from "./components/Testimonials";
+import OurTeam from "./components/OurTeam";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <ServiceSection />
         {/* <Workflow /> */}
         <Pricing />
-        <Testimonials />
+        <OurTeam />
         <Footer />
       </div>
     </div>

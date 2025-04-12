@@ -188,3 +188,22 @@ export const logos = [
  
   // Add more logo paths as needed
 ];
+
+export const teamMembers = [
+  {
+    name: "John Doe",
+    position: "Lead Developer",
+    image: "/team/john.jpg",
+  },
+  {
+    name: "Jane Smith",
+    position: "UI/UX Designer",
+    image: "/team/jane.jpg",
+  },
+  {
+    name: "Sam Lee",
+    position: "Project Manager",
+    image: "/team/sam.jpg",
+  },
+  // Add more...
+];
