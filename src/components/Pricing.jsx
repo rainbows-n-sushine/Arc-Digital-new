@@ -36,7 +36,7 @@ const Pricing = () => {
               key={index}
               src={src}
               alt={`Client ${index + 1}`}
-              className="h-40 w-auto object-contain w-[250px] h-auto"
+              className="h-40 w-auto object-contain w-auto h-[400px]"
             />
           ))}
         </div>
