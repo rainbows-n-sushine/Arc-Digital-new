@@ -181,4 +181,10 @@ export const communityLinks = [
   { href: "#", text: "Conferences" },
   { href: "#", text: "Hackathons" },
   { href: "#", text: "Jobs" },
+]; 
+const logos_BASE="../assets/logos"
+export const logos = [
+  `../assets/logos/client1.jpg`
+ 
+  // Add more logo paths as needed
 ];
