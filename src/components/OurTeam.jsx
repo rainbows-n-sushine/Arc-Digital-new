@@ -8,7 +8,7 @@ const OurTeam = () => {
       {/* Rotating team members for larger screens */}
       <div className="relative w-[600px] h-[600px] rounded-full border-none flex items-center justify-center mb-40 h-[700px] hidden sm:block">
         {/* Rotating members group */}
-        <div className="absolute w-auto h-[600px] animate-orbit mt-[100px] px-[300px]">
+        <div className="absolute w-auto h-[600px] animate-orbit mt-[100px] px-[300px] animate-rotate-center hover:[animation-play-state:paused]">
           {teamMembers.map((member, index) => {
             const total = teamMembers.length;
             const angle = (360 / total) * index;
@@ -20,18 +20,18 @@ const OurTeam = () => {
             return (
               <div
                 key={index}
-                className="absolute w-60 h-60 rounded-full bg-blue-200 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 "
+                className="absolute w-60 h-60 rounded-full bg-blue-100 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 "
                 style={{
                   left: `50%`,
                   top: `50%`,
                   transform: `translate(-50%, -50%) translate(${x}px, ${y}px)`,
                 }}
               >
-                <img
+                {/* <img
                   src={member.image}
                   alt={member.name}
                   className="w-16 h-16 rounded-full border mb-2" // Increased size
-                />
+                /> */}
                 <h4 className="text-lg font-semibold">{member.name}</h4>
                 <p className="text-sm italic text-neutral-700">
                   {member.position}
@@ -49,11 +49,11 @@ const OurTeam = () => {
             key={index}
             className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-200 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300"
           >
-            <img
+            {/* <img
               src={member.image}
               alt={member.name}
               className="w-16 h-16 rounded-full border mb-2"
-            />
+            /> */}
             <h4 className="text-lg font-semibold">{member.name}</h4>
             <p className="text-sm italic text-neutral-700">
               {member.position}

@@ -1,9 +1,9 @@
 import Navbar from "./components/Navbar";
 import HeroSection from "./components/HeroSection";
-import ServiceSection from "./components/ServiceSection";
-import Workflow from "./components/Workflow";
+import OurServices from "./components/OurServices";
+
 import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
+import OurClients from "./components/Ourclients";
 import OurTeam from "./components/OurTeam";
 
 const App = () => {
@@ -12,9 +12,8 @@ const App = () => {
       <Navbar />
       <div className="max-w-7xl mx-auto pt-20 px-6">
         <HeroSection />
-        <ServiceSection />
-        {/* <Workflow /> */}
-        <Pricing />
+        <OurServices />
+        <OurClients />
         <OurTeam />
         <Footer />
       </div>

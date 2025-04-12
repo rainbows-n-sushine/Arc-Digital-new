@@ -1,6 +1,6 @@
 import { useDragScroll } from '../hooks/useDragScroll';
 
-const Pricing = () => {
+const OurClients = () => {
   const logos = [
     "/logos/client1.jpg",
     "/logos/client2.jpg",
@@ -45,4 +45,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default OurClients;

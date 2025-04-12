@@ -1,15 +1,24 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion } from 'framer-motion';
 
-const FadeInParagraph = ({ children, className}) => {
+const FadeInParagraph = ({ children, className }) => {
   const [inView, setInView] = useState(false);
   const elementRef = useRef(null);
 
   useEffect(() => {
+    // Check if IntersectionObserver is supported in the environment
+    if (typeof IntersectionObserver === 'undefined') {
+      console.log('IntersectionObserver is not supported');
+      return;
+    }
+
     const observer = new IntersectionObserver(
       ([entry]) => {
+        console.log('Entry:', entry); // Log entry details to see if it's triggering
         if (entry.isIntersecting) {
           setInView(true);
+        } else {
+          setInView(false);
         }
       },
       {
@@ -29,19 +38,19 @@ const FadeInParagraph = ({ children, className}) => {
   }, []);
 
   return (
-    <motion.p
+    <motion.div
       ref={elementRef}
       className={className}
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{
-        duration: 5,
+        duration: 1,
         ease: 'easeOut',
-        delay: 1,
+        delay: 0.5,
       }}
     >
       {children}
-    </motion.p>
+    </motion.div>
   );
 };
 

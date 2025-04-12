@@ -1,13 +1,13 @@
 import { services } from "../constants";
 
-const ServiceSection = () => {
+const OurServices = () => {
   return (
     <div className="relative mt-20 border-b border-neutral-800 min-h-[800px]">
       <div className="text-center"> 
         <span className="bg-neutral-200 text-blue-800 rounded-full  py-3 px-3 w-full h-[700px] text-[125%] font-medium px-2 py-1 uppercase">
          Our services
         </span>
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-left ml-6">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-left ml-6 mb-28 mt-20">
          Digital {" "}
           <span className="bg-blue-900 text-transparent bg-clip-text">
             Marketing
@@ -35,4 +35,4 @@ const ServiceSection = () => {
   );
 };
 
-export default ServiceSection;
+export default OurServices;
