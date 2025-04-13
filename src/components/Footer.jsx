@@ -1,12 +1,11 @@
 import {  contactLinks } from "../constants";
-import ShootingArrowLogo from "./Animation/shootingArrowLogo";
-import logo from "../assets/logo.png"
-import FadeInParagraph from "./Animation/fadeInParagraph";
+import ShootingArrowLogo from "./Animation/ShootingArrowLogo";
+import FadeInParagraph from "./Animation/FadeInParagraph";
 const Footer = () => {
   return (
     <footer className="  border-t py-4 border-neutral-300 mt-50 flex">
       <div className="flex lg:ml-12 ml-[2px] lg:grid-cols-3 gap-0 ">
-        <FadeInParagraph className="lg:ml-[80px] ml-0 w-[158px]">
+        <FadeInParagraph className="lg:ml-[100px] ml-auto w-[158px]">
           <h3 className="text-md font-semibold text-neutral-900 mt-6">Contacts</h3>
           <div className="flex lg:gap-[100px] gap-[50px] mt-[16px] ">
             <ul className="space-y-4">

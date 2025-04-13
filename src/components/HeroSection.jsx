@@ -1,5 +1,5 @@
 
-import ShootingArrowLogo from "./Animation/ShootingArrowLogo"; // adjust path if needed
+import ShootingArrowLogo from "./Animation/ShootingArrowLogo"; 
 import FadeInParagraph from "./Animation/FadeInParagraph";
 
 const HeroSection = () => {
@@ -18,11 +18,12 @@ const HeroSection = () => {
       <div className="flex justify-center my-10">
         <a
           href="#"
+          target="_blank" 
           className="bg-blue-900 py-2 px-4 mx-3 rounded-md text-white text-center justify-center w-full h-[50%] "
         >
          LinkedIn
         </a>
-        <a href="#" className="py-[7px] px-[23px] mx-3 rounded-md border border-[3px] border-neutral-200 w-full h-[50%] ">
+        <a href="mailto:arcdigitalmain@gmail.com" target="_blank" className="py-[7px] px-[23px] mx-3 rounded-md border border-[3px] border-neutral-200 w-full h-[50%] ">
         Email
         </a>
       </div>
