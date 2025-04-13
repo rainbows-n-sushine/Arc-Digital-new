@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 
-const ShootingArrowLogo = () => {
+const ShootingArrowLogo = ({className}) => {
   const { ref, inView } = useInView({ triggerOnce: false });
   const [triggerAnim, setTriggerAnim] = useState(false);
 
@@ -20,7 +20,7 @@ const ShootingArrowLogo = () => {
       <motion.img
         src={logo}
         alt="arc.logo"
-        className="w-[300px] h-auto"
+        className={className}
         key={triggerAnim ? "animate" : "reset"}
         initial={{ x: -1000, opacity: 0, rotate: -10 }}
         animate={

@@ -59,16 +59,13 @@ export const services = [
 
 
 
-export const contactLinksOne = [
+export const contactLinks = [
   { href: "#", text: "LinkedIn" },
   { href: "https://www.facebook.com/share/12HH3GJHqRV/", text: "Facebook" },
- 
-
-];
-export const contactLinksTwo=[
   { href: "#", text: "WhatsApp" },
   { href: "mailto:arcdigitalmain@gmail.com", text: "Gmail" },
-]
+];
+
 
 
 

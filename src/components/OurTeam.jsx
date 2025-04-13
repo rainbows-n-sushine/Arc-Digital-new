@@ -7,15 +7,15 @@ const OurTeam = () => {
   const dragRef = useDragScroll();
   const [hoveredMember, setHoveredMember] = useState(null);
   return (
-    <div className="text-center text-[18px] pt-[30px]">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-center ml-6 mb-28 mt-20">
+    <div className="text-center text-[18px] pt-[30px]" id="team">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-center ml-6 mb-12 mt-20">
          Our {" "}
           <span className="bg-blue-900 text-transparent bg-clip-text">
             Team
           </span>
         </h2>
       
-    <div className="relative flex flex-col items-center justify-center mt-20 overflow-hidden h-full" id="team">
+    <div className="relative flex flex-col items-center justify-center  overflow-hidden h-full" >
      
 
       {/* Rotating team members for larger screens */}
@@ -68,7 +68,7 @@ const OurTeam = () => {
       {/* Horizontal scroll for smaller screens  */}
       <div 
         ref={dragRef}
-      className="w-full overflow-x-auto flex items-center justify-start space-x-6 pb-8 mt-10 sm:hidden    relative overflow-x-auto scrollbar-hide mt-10 cursor-grab">
+      className="w-full overflow-x-auto flex items-center justify-start space-x-6  pb-20  sm:hidden  relative overflow-x-auto scrollbar-hide cursor-grab ">
         {teamMembers.map((member, index) => (
           <div
          

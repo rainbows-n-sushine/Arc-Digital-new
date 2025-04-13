@@ -1,5 +1,6 @@
 import { services } from "../constants";
 import { PlugZap } from "lucide-react";
+import FadeInParagraph from "./Animation/FadeInParagraph";
 
 const OurServices = () => {
   return (
@@ -13,7 +14,7 @@ const OurServices = () => {
       <div className="flex flex-wrap mt-[80px] lg:mt-100 ">
         {services.map((service, index) => (
           <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
-            <div className="flex">
+            <FadeInParagraph className="flex">
               <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-blue-700 justify-center items-center rounded-full">
                 <PlugZap/>
               </div>
@@ -23,7 +24,7 @@ const OurServices = () => {
                   {service.description}
                 </p>
               </div>
-            </div>
+            </FadeInParagraph>
           </div>
         ))}
       </div>

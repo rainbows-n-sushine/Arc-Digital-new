@@ -5,14 +5,7 @@ import FadeInParagraph from "./Animation/FadeInParagraph";
 const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-0 lg:mt-0" id="hero">
-      {/* <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
-        VirtualR build tools
-        <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
-          {" "}
-          for developers
-        </span>
-      </h1> */}
-     <ShootingArrowLogo />
+     <ShootingArrowLogo className="w-[300px] h-auto"/>
      <FadeInParagraph className="font-medium text-[20px] text-left mt-10" >Where Technology Meets Marketing Brilliance.</FadeInParagraph>
       <p className="mt-12 text-center text-neutral-500 max-w-4xl text-[12px]">
       At Arc Digital, we blend cutting-edge technology with innovative marketing
@@ -29,7 +22,7 @@ const HeroSection = () => {
         >
          LinkedIn
         </a>
-        <a href="#" className="py-2 px-4 mx-3 rounded-md border border-[3px] border-neutral-200 w-full h-[50%] ">
+        <a href="#" className="py-[7px] px-[23px] mx-3 rounded-md border border-[3px] border-neutral-200 w-full h-[50%] ">
         Email
         </a>
       </div>
