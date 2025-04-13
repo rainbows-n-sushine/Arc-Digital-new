@@ -19,7 +19,7 @@
 }
 
 .animate-rotate-center {
-  animation: rotate-center 29s linear infinite;
+  animation: rotate-center 20s linear infinite;
 }
 
 @keyframes scroll-left {
