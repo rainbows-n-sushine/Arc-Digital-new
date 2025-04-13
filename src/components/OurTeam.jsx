@@ -7,8 +7,16 @@ const OurTeam = () => {
   const dragRef = useDragScroll();
   const [hoveredMember, setHoveredMember] = useState(null);
   return (
+    <div className="text-center text-[18px] pt-[30px]">
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-center ml-6 mb-28 mt-20">
+         Our {" "}
+          <span className="bg-blue-900 text-transparent bg-clip-text">
+            Team
+          </span>
+        </h2>
+      
     <div className="relative flex flex-col items-center justify-center mt-20 overflow-hidden h-full" id="team">
-      <h2 className="text-4xl sm:text-6xl text-center mb-7 z-10 mb-40 text-left">Our Team</h2>
+     
 
       {/* Rotating team members for larger screens */}
       <div className="relative w-[600px] h-[600px] rounded-full border-none flex items-center justify-center mb-40 h-[700px] hidden sm:block">
@@ -25,7 +33,7 @@ const OurTeam = () => {
             return (
               <div
                 key={index}
-                className="absolute w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 "
+                className="absolute w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 hover:bg-blue-300 "
                 style={{
                   left: `50%`,
                   top: `50%`,
@@ -34,12 +42,8 @@ const OurTeam = () => {
                 onMouseEnter={() => setHoveredMember(member)}
                 onMouseLeave={() => setHoveredMember(null)}
               >
-                {/* <img
-                  src={member.image}
-                  alt={member.name}
-                  className="w-16 h-16 rounded-full border mb-2" // Increased size
-                /> */}
-                <h4 className="text-lg font-semibold text-white">{member.name}</h4>
+             
+                <h4 className="text-lg font-semibold text-white ">{member.name}</h4>
                 <p className="text-sm italic text-neutral-100">
                   {member.position}
                 </p>
@@ -50,18 +54,18 @@ const OurTeam = () => {
           })}
         </div>
         {hoveredMember && (
-        <div className="absolute top-[20%] sm:top-[10%] bg-white text-black rounded-md p-4 shadow-xl w-72 z-30 transition-opacity duration-300 ease-in">
+        <div className="absolute top-[20%] sm:top-[10%] bg-white text-black rounded-md p-4 shadow-xl w-72 z-30 transition-opacity duration-300 ease-in ">
           <h5 className="text-xl font-bold">{hoveredMember.name}</h5>
           <p className="italic">{hoveredMember.position}</p>
           <p className="mt-2 text-sm text-gray-700">
-            {/* {hoveredMember.bio || "Creative and collaborative team member."} */}
+         
           </p>
         </div>
       )}
       </div>
       
 
-      {/* Horizontal scroll for smaller screens */}
+      {/* Horizontal scroll for smaller screens  */}
       <div 
         ref={dragRef}
       className="w-full overflow-x-auto flex items-center justify-start space-x-6 pb-8 mt-10 sm:hidden    relative overflow-x-auto scrollbar-hide mt-10 cursor-grab">
@@ -71,11 +75,7 @@ const OurTeam = () => {
             key={index}
             className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 animate-scroll"
           >
-            {/* <img
-              src={member.image}
-              alt={member.name}
-              className="w-16 h-16 rounded-full border mb-2"
-            /> */}
+           
             <h4 className="text-lg font-semibold text-white">{member.name}</h4>
             <p className="text-sm italic text-neutral-100">
               {member.position}
@@ -83,6 +83,7 @@ const OurTeam = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
