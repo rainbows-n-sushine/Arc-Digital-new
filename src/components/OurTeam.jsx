@@ -8,7 +8,7 @@ const OurTeam = () => {
   const [hoveredMember, setHoveredMember] = useState(null);
   return (
     <div className="text-center text-[18px] pt-[30px]" id="team">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide text-center ml-6 mb-12 mt-20">
+        <h2 className="text-3xl sm:text-[38px] lg:text-[38px] mt-10 lg:mt-20 tracking-wide text-center ml-6 mb-2 mt-20">
          Our {" "}
           <span className="bg-blue-900 text-transparent bg-clip-text">
             Team
@@ -54,26 +54,26 @@ const OurTeam = () => {
           })}
         </div>
         {hoveredMember && (
-        <div className="absolute top-[20%] sm:top-[10%] bg-white text-black rounded-md p-4 shadow-xl w-72 z-30 transition-opacity duration-300 ease-in ">
-          <h5 className="text-xl font-bold">{hoveredMember.name}</h5>
-          <p className="italic">{hoveredMember.position}</p>
-          <p className="mt-2 text-sm text-gray-700">
-         
-          </p>
+        <div className="absolute top-[60%] sm:left-[33%] sm:top-[52%]  bg-blue-100 text-black rounded-md p-3 shadow-xl w-[200px] z-30 transition-opacity duration-300 ease-in ">
+          <h5 className="text-[16px] font-bold">{hoveredMember.name}</h5>
+          <p className="italic text-[12px]">{hoveredMember.position}</p>
         </div>
       )}
       </div>
       
 
       {/* Horizontal scroll for smaller screens  */}
+      <div
+       ref={dragRef}
+        className="relative overflow-x-auto scrollbar-hide mt-10 cursor-grab"
+      >
       <div 
-        ref={dragRef}
-      className="w-full overflow-x-auto flex items-center justify-start space-x-6  pb-20  sm:hidden  relative overflow-x-auto scrollbar-hide cursor-grab ">
+      className="w-full overflow-x-auto flex items-center justify-start space-x-6  pb-20  sm:hidden  relative animate-scroll ">
         {teamMembers.map((member, index) => (
           <div
          
             key={index}
-            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 animate-scroll"
+            className="flex-shrink-0 w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 object-contain"
           >
            
             <h4 className="text-lg font-semibold text-white">{member.name}</h4>
@@ -82,6 +82,7 @@ const OurTeam = () => {
             </p>
           </div>
         ))}
+      </div>
       </div>
     </div>
     </div>
