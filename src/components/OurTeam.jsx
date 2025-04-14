@@ -33,7 +33,7 @@ const OurTeam = () => {
             return (
               <div
                 key={index}
-                className="absolute w-60 h-60 rounded-full bg-blue-950 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 hover:bg-blue-300 "
+                className="absolute w-60 h-60 rounded-full bg-blue-300 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 hover:bg-blue-100 "
                 style={{
                   left: `50%`,
                   top: `50%`,
@@ -43,8 +43,8 @@ const OurTeam = () => {
                 onMouseLeave={() => setHoveredMember(null)}
               >
              
-                <h4 className="text-lg font-semibold text-white ">{member.name}</h4>
-                <p className="text-sm italic text-neutral-100">
+                <h4 className="text-lg font-semibold text-black ">{member.name}</h4>
+                <p className="text-sm italic text-neutral-600">
                   {member.position}
                 </p>
               
