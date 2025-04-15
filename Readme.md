@@ -54,6 +54,6 @@ npm install
 npm run dev
 ```
 
-# Here is the deployment server
+# Here is the live server
 
 https://arc-digital-1.onrender.com/
