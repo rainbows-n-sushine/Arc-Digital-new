@@ -6,7 +6,6 @@ const FadeInParagraph = ({ children, className }) => {
   const elementRef = useRef(null);
 
   useEffect(() => {
-    // Check if IntersectionObserver is supported in the environment
     if (typeof IntersectionObserver === 'undefined') {
       console.log('IntersectionObserver is not supported');
       return;
@@ -14,7 +13,7 @@ const FadeInParagraph = ({ children, className }) => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        console.log('Entry:', entry); // Log entry details to see if it's triggering
+        console.log('Entry:', entry); 
         if (entry.isIntersecting) {
           setInView(true);
         } else {
@@ -22,7 +21,7 @@ const FadeInParagraph = ({ children, className }) => {
         }
       },
       {
-        threshold: 0.2, // 20% of the element needs to be in view
+        threshold: 0.2, 
       }
     );
 

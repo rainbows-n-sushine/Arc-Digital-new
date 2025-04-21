@@ -11,7 +11,7 @@ const ShootingArrowLogo = ({className}) => {
     if (inView) {
       setTriggerAnim(true);
     } else {
-      setTriggerAnim(false); // reset for re-trigger
+      setTriggerAnim(false); 
     }
   }, [inView]);
 
@@ -33,7 +33,7 @@ const ShootingArrowLogo = ({className}) => {
             : {}
         }
         transition={{
-          duration: 3.2, // ✨ slightly faster (was 5)
+          duration: 3.2,
           ease: [0.25, 1, 0.5, 1],
           times: [0, 0.4, 0.6, 0.8, 1],
         }}

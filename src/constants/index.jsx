@@ -90,5 +90,5 @@ export const teamMembers = [
     name: "Dinku Tadele",
     position: "Account Manager",
   }
-  // Add more...
+
 ];
