@@ -2,6 +2,7 @@ import plugin from 'tailwindcss/plugin';
 import scrollbarHide from 'tailwind-scrollbar-hide';
 
 export default {
+   darkMode: 'media',
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
