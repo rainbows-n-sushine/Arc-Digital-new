@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div className="flex flex-col items-center mt-0 lg:mt-0" id="hero">
      <ShootingArrowLogo className="w-[300px] h-auto"/>
      <FadeInParagraph className="font-medium text-[20px] text-left mt-10" >Where Technology Meets Marketing Brilliance.</FadeInParagraph>
-      <p className="mt-12 text-center text-neutral-500 max-w-4xl text-[12px]">
+      <p className="mt-12 text-center text-neutral-500 max-w-4xl text-[12px] dark:text-neutral-400">
       At Arc Digital, we blend cutting-edge technology with innovative marketing
        strategies to create powerful digital experiences. Our expert team leverages 
        data-driven insights and the latest trends to craft campaigns that elevate your 

@@ -44,21 +44,21 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-blue-200  py-7 px-0  flex flex-col  gap-1 items-center lg:hidden w-[40%] h-[300px] rounded-[10px] ">
+          <div className="fixed right-0 z-20 px-[2dvw] py-[2dvh] bg-blue-100 flex flex-col  gap-1 items-center lg:hidden w-[30dvw] h-[250px] rounded-[10px] items-center justify-center md:w-[15dvw]">
             <ul>
               {navItems.map((item, index) => (
-                <li key={index} className="py-2 text-[14px]">
+                <li key={index} className="py-2 text-[12px]">
                   <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
-            <div className="flex flex-col gap-3 space-x-6">
-              <a href="#" className="py-2 px-5 mx-6 w-[57%]  border border-black rounded-md justify-center text-center flex text-[12px]">
+            <div className="flex flex-col gap-3 space-x-1 text-center items-center">
+              <a href="#" className="py-1  mx-0  w-[70%]  border border-black rounded-md justify-center text-center flex text-[12px]">
                 Sign In
               </a>
               <a
                 href="#"
-                className="py-2 px-2 w-[57%] flex justify-center align-center mr-[20px] rounded-mdbg-blue-900 text-white text-[12px]"
+                className=" px-[10px] py-[5px] w-[80%] flex justify-center align-center mx-[15px] rounded-md bg-blue-200 text-neutral-600 text-[12px] "
               >
                 Create an account
               </a>

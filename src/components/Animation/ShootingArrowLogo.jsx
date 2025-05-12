@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
+import logo2 from "../../assets/arc-back-white.png"
 
 const ShootingArrowLogo = ({className}) => {
   const { ref, inView } = useInView({ triggerOnce: false });
@@ -18,7 +19,7 @@ const ShootingArrowLogo = ({className}) => {
   return (
     <div ref={ref}>
       <motion.img
-        src={logo}
+        src={logo2}
         alt="arc.logo"
         className={className}
         key={triggerAnim ? "animate" : "reset"}
