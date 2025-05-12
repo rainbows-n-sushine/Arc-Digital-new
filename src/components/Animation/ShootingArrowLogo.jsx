@@ -16,7 +16,7 @@ const ShootingArrowLogo = ({className}) => {
   }, [inView]);
 
   return (
-    <div ref={ref} className="dark:invert">
+    <div ref={ref}>
       <motion.img
         src={logo}
         alt="arc.logo"
