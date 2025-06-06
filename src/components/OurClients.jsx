@@ -22,7 +22,7 @@ const OurClients = () => {
   const dragRef = useDragScroll();
 
   return (
-    <div className="w-full mt-20 my-12 text-center border-b border-neutral-300" id="clients">
+    <div className="w-full mt-20 my-12 text-center " id="clients">
        <span className="bg-neutral-200 text-blue-800 rounded-full  py-3 px-3 w-full h-[700px] text-[125%] font-medium  uppercase items-center">
          Our clients
         </span>

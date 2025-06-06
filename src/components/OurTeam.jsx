@@ -33,7 +33,7 @@ const OurTeam = () => {
             return (
               <div
                 key={index}
-                className="absolute w-60 h-60 rounded-full bg-blue-300 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 hover:bg-blue-100 "
+                className="absolute w-60 h-60 rounded-full bg-blue-100 text-center flex flex-col items-center justify-center shadow-md border border-neutral-300 hover:bg-blue-50 "
                 style={{
                   left: `50%`,
                   top: `50%`,
