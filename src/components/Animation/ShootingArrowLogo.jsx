@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 
 const ShootingArrowLogo = ({className}) => {
   const { ref, inView } = useInView({ triggerOnce: false });
