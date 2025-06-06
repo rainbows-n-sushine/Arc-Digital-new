@@ -3,7 +3,7 @@ import ShootingArrowLogo from "./Animation/ShootingArrowLogo";
 import FadeInParagraph from "./Animation/FadeInParagraph";
 const Footer = () => {
   return (
-    <footer className="  border-t py-4 border-neutral-300 mt-50 flex">
+    <footer className="  border-t py-4 border-neutral-300 mt-50 flex px-6">
       <div className="flex lg:ml-12 ml-[2px] lg:flex-col-2 gap-0 ">
         <FadeInParagraph className="lg:ml-[100px] ml-auto w-[158px]">
           <h3 className="text-md font-semibold text-neutral-900 mt-6">Contacts</h3>

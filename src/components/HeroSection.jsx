@@ -4,7 +4,7 @@ import FadeInParagraph from "./Animation/FadeInParagraph";
 
 const HeroSection = () => {
   return (
-    <div className="flex flex-col items-center mt-0 lg:mt-0" id="hero">
+    <div className="flex flex-col items-center mt-0 lg:mt-0 px-6" id="hero">
      <ShootingArrowLogo className="w-[300px] h-auto"/>
      <FadeInParagraph className="font-medium text-[20px] text-left mt-10" >Where Technology Meets Marketing Brilliance.</FadeInParagraph>
       <p className="mt-12 text-center text-neutral-500 max-w-4xl text-[12px] dark:text-neutral-400">

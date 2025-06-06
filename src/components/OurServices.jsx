@@ -4,7 +4,7 @@ import FadeInParagraph from "./Animation/FadeInParagraph";
 
 const OurServices = () => {
   return (
-    <div className="relative mt-20 border-b border-neutral-300 min-h-[800px]" id="services">
+    <div className="relative mt-20 border-b border-neutral-300 min-h-[800px] px-6" id="services">
       <div className="text-center"> 
         <span className="bg-neutral-200 text-blue-800 rounded-full  py-3 px-3 w-full h-[700px] text-[125%] font-medium  uppercase">
          Our services
